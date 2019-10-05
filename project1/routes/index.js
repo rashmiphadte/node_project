@@ -12,10 +12,10 @@ module.exports = function(app) {
       var route_name;
       if (file.indexOf("index.js") < 0) {
         route_name = file.slice(0, file.indexOf("-router.js"));
-        
-        console.log("hello",route_name)
+
+        console.log("hello",route_name, file)
         console.log("hello",route_name.toString() + "/", require("./" + file));
-        return app.use(route_name.toString() + "/", require("./" + file));
+        return app.use("/" + route_name.toString() + "/", require("./" + file));
       }
     });
   });
