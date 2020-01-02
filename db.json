@@ -1,0 +1,17 @@
+{
+    "players": [
+        {
+          "name": "FC Barcelona",
+          "age":25,
+          "address":"ponda",
+          "contact":7798381886
+          
+        },
+        {
+          "name": "Real Madrid",
+          "age":26,
+          "address":"panjim",
+          "contact":8568952314
+        }
+      ]
+    }
